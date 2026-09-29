@@ -71,7 +71,7 @@ async function updateProfile(env: Env): Promise<void> {
   }));
 
   const files: Record<string, string> = {
-    "README.md": updateReadmeProjects(currentReadme, repos),
+    "README.md": updateReadmeAssetVersion(updateReadmeProjects(currentReadme, repos), today),
     "assets/daily-contributions-light.svg": lineSvg(commitDays, false),
     "assets/daily-contributions-dark.svg": lineSvg(commitDays, true),
   };
@@ -183,6 +183,14 @@ async function loadRecentRepos(token: string, login: string): Promise<Repo[]> {
   return data.user.repositories.nodes
     .filter((repo) => !repo.isPrivate && !repo.isArchived && !repo.isFork && repo.name !== login)
     .slice(0, 10);
+}
+
+function updateReadmeAssetVersion(readme: string, isoDate: string): string {
+  const version = isoDate.slice(2).replace(/-/g, "");
+  return readme.replace(
+    /(daily-contributions-(?:dark|light)\.svg)(?:\?v=\d{6})?/g,
+    `$1?v=${version}`,
+  );
 }
 
 function updateReadmeProjects(readme: string, repos: Repo[]): string {
