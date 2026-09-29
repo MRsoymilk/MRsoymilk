@@ -1,17 +1,9 @@
-# Contributions in the last year
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/contributions-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/contributions-light.svg">
-  <img alt="Contributions in the last year" src="./assets/contributions-light.svg" width="100%">
-</picture>
-
 ## Daily Commits
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/daily-contributions-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/daily-contributions-light.svg">
-  <img alt="Daily contributions" src="./assets/daily-contributions-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-light.svg">
+  <img alt="Daily commits" src="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-light.svg" width="100%">
 </picture>
 
 ## Recently Active Projects

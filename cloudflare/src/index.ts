@@ -1,11 +1,11 @@
 interface Env {
   GITHUB_TOKEN: string;
+  MANUAL_TRIGGER_TOKEN: string;
   GITHUB_OWNER?: string;
   GITHUB_REPO?: string;
   GITHUB_BRANCH?: string;
 }
 
-type ContributionDay = { date: string; contributionCount: number };
 type Repo = {
   name: string;
   url: string;
@@ -21,7 +21,28 @@ type Repo = {
 const GRAPHQL_URL = "https://api.github.com/graphql";
 
 export default {
-  async fetch(): Promise<Response> {
+  async fetch(request: Request, env: Env): Promise<Response> {
+    const url = new URL(request.url);
+
+    if (url.pathname === "/update" && request.method === "POST") {
+      if (!env.MANUAL_TRIGGER_TOKEN) {
+        return new Response("MANUAL_TRIGGER_TOKEN secret is not configured.\n", { status: 500 });
+      }
+      const authorization = request.headers.get("Authorization");
+      if (authorization !== `Bearer ${env.MANUAL_TRIGGER_TOKEN}`) {
+        return new Response("Unauthorized\n", { status: 401 });
+      }
+
+      try {
+        await updateProfile(env);
+        return new Response("Profile updated.\n");
+      } catch (error) {
+        console.error("Manual profile update failed", error);
+        const message = error instanceof Error ? error.message : String(error);
+        return new Response(`Profile update failed: ${message}\n`, { status: 500 });
+      }
+    }
+
     return new Response("MRsoymilk profile updater is running. Updates are executed by Cron Trigger.\n");
   },
 
@@ -39,19 +60,20 @@ async function updateProfile(env: Env): Promise<void> {
   const today = utcDate(new Date());
   const start = addDays(today, -364);
 
-  const [days, dailyCommits, repos, currentReadme] = await Promise.all([
-    loadContributionCalendar(env.GITHUB_TOKEN, owner, start, today),
+  const [dailyCommits, repos, currentReadme] = await Promise.all([
     loadDailyCommits(env.GITHUB_TOKEN, owner, start, today),
     loadRecentRepos(env.GITHUB_TOKEN, owner),
     getFileText(env.GITHUB_TOKEN, owner, repo, "README.md", branch),
   ]);
+  const commitDays = dateRange(start, today).map((date) => ({
+    date,
+    commitCount: dailyCommits.get(date) || 0,
+  }));
 
   const files: Record<string, string> = {
     "README.md": updateReadmeProjects(currentReadme, repos),
-    "assets/contributions-light.svg": heatmapSvg(days, false),
-    "assets/contributions-dark.svg": heatmapSvg(days, true),
-    "assets/daily-contributions-light.svg": lineSvg(days.map((d) => ({ date: d.date, commitCount: dailyCommits.get(d.date) || 0 })), false),
-    "assets/daily-contributions-dark.svg": lineSvg(days.map((d) => ({ date: d.date, commitCount: dailyCommits.get(d.date) || 0 })), true),
+    "assets/daily-contributions-light.svg": lineSvg(commitDays, false),
+    "assets/daily-contributions-dark.svg": lineSvg(commitDays, true),
   };
 
   await commitFiles(env.GITHUB_TOKEN, owner, repo, branch, files);
@@ -87,40 +109,6 @@ async function githubRest<T>(token: string, url: string, init: RequestInit = {})
   });
   if (!response.ok) throw new Error(`GitHub REST HTTP ${response.status}: ${await response.text()}`);
   return (await response.json()) as T;
-}
-
-async function loadContributionCalendar(token: string, login: string, from: string, to: string): Promise<ContributionDay[]> {
-  const query = `
-    query($login: String!, $from: DateTime!, $to: DateTime!) {
-      user(login: $login) {
-        contributionsCollection(from: $from, to: $to) {
-          contributionCalendar {
-            weeks {
-              contributionDays { date contributionCount }
-            }
-          }
-        }
-      }
-    }
-  `;
-  type Data = {
-    user: {
-      contributionsCollection: {
-        contributionCalendar: {
-          weeks: Array<{ contributionDays: ContributionDay[] }>;
-        };
-      };
-    } | null;
-  };
-  const data = await githubGraphql<Data>(token, query, {
-    login,
-    from: `${from}T00:00:00Z`,
-    to: `${to}T23:59:59Z`,
-  });
-  if (!data.user) throw new Error(`GitHub user not found: ${login}`);
-  return data.user.contributionsCollection.contributionCalendar.weeks
-    .flatMap((week) => week.contributionDays)
-    .filter((day) => day.date >= from && day.date <= to);
 }
 
 async function loadDailyCommits(token: string, login: string, from: string, to: string): Promise<Map<string, number>> {
@@ -216,54 +204,6 @@ function palette(dark: boolean) {
     : { bg: "#ffffff", border: "#d0d7de", text: "#1f2328", muted: "#656d76", grid: "#d8dee4", line: "#1a7f37", empty: "#ebedf0", levels: ["#9be9a8", "#40c463", "#30a14e", "#216e39"] };
 }
 
-function heatmapSvg(days: ContributionDay[], dark: boolean): string {
-  const c = palette(dark);
-  const width = 920, height = 178, left = 50, top = 48, cell = 12, gap = 3, step = cell + gap;
-  const maximum = Math.max(1, ...days.map((d) => d.contributionCount));
-  const total = days.reduce((sum, d) => sum + d.contributionCount, 0);
-  const map = new Map(days.map((d) => [d.date, d.contributionCount]));
-  const first = parseDate(days[0].date);
-  const last = parseDate(days[days.length - 1].date);
-  const sunday = addDaysObj(first, -first.getUTCDay());
-
-  const rects: string[] = [];
-  const monthLabels: string[] = [];
-  const seen = new Set<string>();
-  let current = sunday;
-  let week = 0;
-
-  while (current <= last) {
-    for (let weekday = 0; weekday < 7; weekday++) {
-      const day = addDaysObj(current, weekday);
-      const key = utcDate(day);
-      if (!map.has(key)) continue;
-      const value = map.get(key) || 0;
-      const level = value === 0 ? 0 : Math.min(4, Math.max(1, Math.ceil((value / maximum) * 4)));
-      const fill = level === 0 ? c.empty : c.levels[level - 1];
-      const x = left + week * step;
-      const y = top + weekday * step;
-      rects.push(`<rect x="${x}" y="${y}" width="${cell}" height="${cell}" rx="2" fill="${fill}"><title>${key}: ${value} contributions</title></rect>`);
-      const monthKey = `${day.getUTCFullYear()}-${day.getUTCMonth()}`;
-      if (day.getUTCDate() <= 7 && !seen.has(monthKey)) {
-        seen.add(monthKey);
-        monthLabels.push(`<text x="${x}" y="35" font-size="11" fill="${c.muted}">${monthName(day)}</text>`);
-      }
-    }
-    current = addDaysObj(current, 7);
-    week++;
-  }
-
-  const dayLabels = [[1, "Mon"], [3, "Wed"], [5, "Fri"]]
-    .map(([i, name]) => `<text x="8" y="${top + Number(i) * step + 10}" font-size="10" fill="${c.muted}">${name}</text>`)
-    .join("");
-
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">
-<rect x=".5" y=".5" width="${width - 1}" height="${height - 1}" rx="8" fill="${c.bg}" stroke="${c.border}"/>
-<text x="18" y="24" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="13" font-weight="600" fill="${c.text}">${total.toLocaleString()} contributions in the last year</text>
-<g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif">${monthLabels.join("")}${dayLabels}${rects.join("")}</g>
-</svg>`;
-}
-
 function lineSvg(days: Array<{ date: string; commitCount: number }>, dark: boolean): string {
   const c = palette(dark);
   const width = 920, height = 260, left = 46, right = 18, top = 36, bottom = 38;
@@ -339,6 +279,17 @@ async function commitFiles(token: string, owner: string, repo: string, branch: s
     method: "PATCH",
     body: JSON.stringify({ sha: newCommit.sha, force: false }),
   });
+}
+
+function dateRange(from: string, to: string): string[] {
+  const result: string[] = [];
+  let current = parseDate(from);
+  const end = parseDate(to);
+  while (current <= end) {
+    result.push(utcDate(current));
+    current = addDaysObj(current, 1);
+  }
+  return result;
 }
 
 function splitDateRange(from: string, to: string, chunkDays: number): Array<[string, string]> {
