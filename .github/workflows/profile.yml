@@ -1,0 +1,49 @@
+name: Update profile
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 0 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/generate_profile.py"
+      - ".github/workflows/profile.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-readme
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate profile
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_PROFILE_USER: MRsoymilk
+        run: python scripts/generate_profile.py
+
+      - name: Commit generated profile
+        run: |
+          if git diff --quiet; then
+            echo "No profile changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md assets/
+          git commit -m "chore(profile): update activity stats"
+          git push
