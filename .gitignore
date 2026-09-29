@@ -33,6 +33,11 @@ Thumbs.db
 .env.*
 !.env.example
 
+# Node / Cloudflare
+node_modules/
+cloudflare/.wrangler/
+cloudflare/.dev.vars
+
 # Temporary files
 *.tmp
 *.temp

@@ -6,7 +6,7 @@
   <img alt="Contributions in the last year" src="./assets/contributions-light.svg" width="100%">
 </picture>
 
-## Daily Contributions
+## Daily Commits
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/daily-contributions-dark.svg">
