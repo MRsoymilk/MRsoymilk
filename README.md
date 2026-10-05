@@ -1,20 +1,20 @@
 ## Daily Commits
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-dark.svg?v=261004">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-light.svg?v=261004">
-  <img alt="Daily commits" src="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-light.svg?v=261004" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-dark.svg?v=261005">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-light.svg?v=261005">
+  <img alt="Daily commits" src="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-light.svg?v=261005" width="100%">
 </picture>
 
 ## Recently Active Projects
 
 <!-- RECENT_PROJECTS:START -->
-01. **[ReadAll](https://github.com/MRsoymilk/ReadAll)** · Rust · updated 4h ago — Cross-platform e-book reading
-02. **[EndlessVibe](https://github.com/MRsoymilk/EndlessVibe)** · Rust · updated 1d ago — Just do vibe coding!
-03. **[ctlyrics](https://github.com/MRsoymilk/ctlyrics)** · Rust · ★ 1 · updated 1d ago — cmus terminal lyrics
-04. **[mHyprBar](https://github.com/MRsoymilk/mHyprBar)** · Rust · updated 3d ago — A native Wayland status bar for Hyprland
-05. **[mHyprMenu](https://github.com/MRsoymilk/mHyprMenu)** · Rust · updated 3d ago — A small native Wayland cascading context menu for Hyprland.
-06. **[cim](https://github.com/MRsoymilk/cim)** · C++ · updated 2w ago — Command-im
+01. **[ReadAll](https://github.com/MRsoymilk/ReadAll)** · Rust · updated 8h ago — Cross-platform e-book reading
+02. **[EndlessVibe](https://github.com/MRsoymilk/EndlessVibe)** · Rust · updated 2d ago — Just do vibe coding!
+03. **[ctlyrics](https://github.com/MRsoymilk/ctlyrics)** · Rust · ★ 1 · updated 2d ago — cmus terminal lyrics
+04. **[mHyprBar](https://github.com/MRsoymilk/mHyprBar)** · Rust · updated 4d ago — A native Wayland status bar for Hyprland
+05. **[mHyprMenu](https://github.com/MRsoymilk/mHyprMenu)** · Rust · updated 4d ago — A small native Wayland cascading context menu for Hyprland.
+06. **[cim](https://github.com/MRsoymilk/cim)** · C++ · updated 3w ago — Command-im
 07. **[YoAuthorize](https://github.com/MRsoymilk/YoAuthorize)** · C++ · updated 3w ago — ya! net. simple network implement
 08. **[dotConfig](https://github.com/MRsoymilk/dotConfig)** · Lua · updated 3w ago — Personal system configuration related
 09. **[MRsoymilk.github.io](https://github.com/MRsoymilk/MRsoymilk.github.io)** · HTML · updated 4w ago — 我的博客
