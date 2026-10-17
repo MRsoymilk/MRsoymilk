@@ -1,24 +1,24 @@
 ## Daily Commits
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-dark.svg?v=261016">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-light.svg?v=261016">
-  <img alt="Daily commits" src="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-light.svg?v=261016" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-dark.svg?v=261017">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-light.svg?v=261017">
+  <img alt="Daily commits" src="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-light.svg?v=261017" width="100%">
 </picture>
 
 ## Recently Active Projects
 
 <!-- RECENT_PROJECTS:START -->
-01. **[ctlyrics](https://github.com/MRsoymilk/ctlyrics)** · Rust · ★ 1 · updated 1d ago — cmus terminal lyrics
-02. **[LiSnap](https://github.com/MRsoymilk/LiSnap)** · Rust · updated 1d ago — Cross-platform screenshot tool
-03. **[EndlessVibe](https://github.com/MRsoymilk/EndlessVibe)** · Rust · updated 1d ago — Just do vibe coding!
-04. **[mHyprBar](https://github.com/MRsoymilk/mHyprBar)** · Rust · updated 1w ago — A native Wayland status bar for Hyprland
-05. **[ReadAll](https://github.com/MRsoymilk/ReadAll)** · Rust · updated 1w ago — Cross-platform e-book reading
-06. **[mHyprMenu](https://github.com/MRsoymilk/mHyprMenu)** · Rust · updated 2w ago — A small native Wayland cascading context menu for Hyprland.
-07. **[cim](https://github.com/MRsoymilk/cim)** · C++ · updated 1mo ago — Command-im
-08. **[YoAuthorize](https://github.com/MRsoymilk/YoAuthorize)** · C++ · updated 1mo ago — ya! net. simple network implement
-09. **[dotConfig](https://github.com/MRsoymilk/dotConfig)** · Lua · updated 1mo ago — Personal system configuration related
-10. **[MRsoymilk.github.io](https://github.com/MRsoymilk/MRsoymilk.github.io)** · HTML · updated 1mo ago — 我的博客
+01. **[Vssjx](https://github.com/MRsoymilk/Vssjx)** · — · ★ 1 · updated 5h ago — 冒泡社区蜀山剑侠！学习
+02. **[ctlyrics](https://github.com/MRsoymilk/ctlyrics)** · Rust · ★ 1 · updated 19h ago — cmus terminal lyrics
+03. **[LiSnap](https://github.com/MRsoymilk/LiSnap)** · Rust · updated 2d ago — Cross-platform screenshot tool
+04. **[EndlessVibe](https://github.com/MRsoymilk/EndlessVibe)** · Rust · updated 2d ago — Just do vibe coding!
+05. **[mHyprBar](https://github.com/MRsoymilk/mHyprBar)** · Rust · updated 1w ago — A native Wayland status bar for Hyprland
+06. **[ReadAll](https://github.com/MRsoymilk/ReadAll)** · Rust · updated 1w ago — Cross-platform e-book reading
+07. **[mHyprMenu](https://github.com/MRsoymilk/mHyprMenu)** · Rust · updated 2w ago — A small native Wayland cascading context menu for Hyprland.
+08. **[cim](https://github.com/MRsoymilk/cim)** · C++ · updated 1mo ago — Command-im
+09. **[YoAuthorize](https://github.com/MRsoymilk/YoAuthorize)** · C++ · updated 1mo ago — ya! net. simple network implement
+10. **[dotConfig](https://github.com/MRsoymilk/dotConfig)** · Lua · updated 1mo ago — Personal system configuration related
 <!-- RECENT_PROJECTS:END -->
 
 ---
