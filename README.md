@@ -1,18 +1,18 @@
 ## Daily Commits
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-dark.svg?v=261020">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-light.svg?v=261020">
-  <img alt="Daily commits" src="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-light.svg?v=261020" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-dark.svg?v=261021">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-light.svg?v=261021">
+  <img alt="Daily commits" src="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-light.svg?v=261021" width="100%">
 </picture>
 
 ## Recently Active Projects
 
 <!-- RECENT_PROJECTS:START -->
-01. **[Vssjx](https://github.com/MRsoymilk/Vssjx)** · Assembly · ★ 2 · updated 6h ago — 冒泡社区蜀山剑侠！学习
-02. **[ctlyrics](https://github.com/MRsoymilk/ctlyrics)** · Rust · ★ 1 · updated 3d ago — cmus terminal lyrics
-03. **[LiSnap](https://github.com/MRsoymilk/LiSnap)** · Rust · updated 5d ago — Cross-platform screenshot tool
-04. **[EndlessVibe](https://github.com/MRsoymilk/EndlessVibe)** · Rust · updated 5d ago — Just do vibe coding!
+01. **[Vssjx](https://github.com/MRsoymilk/Vssjx)** · Assembly · ★ 2 · updated 40m ago — 冒泡社区蜀山剑侠！学习
+02. **[ctlyrics](https://github.com/MRsoymilk/ctlyrics)** · Rust · ★ 1 · updated 4d ago — cmus terminal lyrics
+03. **[LiSnap](https://github.com/MRsoymilk/LiSnap)** · Rust · updated 6d ago — Cross-platform screenshot tool
+04. **[EndlessVibe](https://github.com/MRsoymilk/EndlessVibe)** · Rust · updated 6d ago — Just do vibe coding!
 05. **[mHyprBar](https://github.com/MRsoymilk/mHyprBar)** · Rust · updated 1w ago — A native Wayland status bar for Hyprland
 06. **[ReadAll](https://github.com/MRsoymilk/ReadAll)** · Rust · updated 1w ago — Cross-platform e-book reading
 07. **[mHyprMenu](https://github.com/MRsoymilk/mHyprMenu)** · Rust · ★ 1 · updated 2w ago — A small native Wayland cascading context menu for Hyprland.
