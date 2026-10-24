@@ -1,16 +1,16 @@
 ## Daily Commits
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-dark.svg?v=261023">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-light.svg?v=261023">
-  <img alt="Daily commits" src="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-light.svg?v=261023" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-dark.svg?v=261024">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-light.svg?v=261024">
+  <img alt="Daily commits" src="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-light.svg?v=261024" width="100%">
 </picture>
 
 ## Recently Active Projects
 
 <!-- RECENT_PROJECTS:START -->
-01. **[Vssjx](https://github.com/MRsoymilk/Vssjx)** · Assembly · ★ 3 · updated 1d ago — 冒泡社区蜀山剑侠！学习
-02. **[ctlyrics](https://github.com/MRsoymilk/ctlyrics)** · Rust · ★ 1 · updated 6d ago — cmus terminal lyrics
+01. **[Vssjx](https://github.com/MRsoymilk/Vssjx)** · Assembly · ★ 4 · updated 9h ago — 冒泡社区蜀山剑侠！学习
+02. **[ctlyrics](https://github.com/MRsoymilk/ctlyrics)** · Rust · ★ 1 · updated 1w ago — cmus terminal lyrics
 03. **[LiSnap](https://github.com/MRsoymilk/LiSnap)** · Rust · updated 1w ago — Cross-platform screenshot tool
 04. **[EndlessVibe](https://github.com/MRsoymilk/EndlessVibe)** · Rust · updated 1w ago — Just do vibe coding!
 05. **[mHyprBar](https://github.com/MRsoymilk/mHyprBar)** · Rust · updated 2w ago — A native Wayland status bar for Hyprland
