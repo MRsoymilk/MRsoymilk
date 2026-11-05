@@ -1,9 +1,9 @@
 ## Daily Commits
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-dark.svg?v=261104">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-light.svg?v=261104">
-  <img alt="Daily commits" src="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-light.svg?v=261104" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-dark.svg?v=261105">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-light.svg?v=261105">
+  <img alt="Daily commits" src="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-light.svg?v=261105" width="100%">
 </picture>
 
 ## Recently Active Projects
@@ -11,8 +11,8 @@
 <!-- RECENT_PROJECTS:START -->
 01. **[Vssjx](https://github.com/MRsoymilk/Vssjx)** · Assembly · ★ 4 · updated 1w ago — 冒泡社区蜀山剑侠！学习
 02. **[ctlyrics](https://github.com/MRsoymilk/ctlyrics)** · Rust · ★ 1 · updated 2w ago — cmus terminal lyrics
-03. **[LiSnap](https://github.com/MRsoymilk/LiSnap)** · Rust · updated 2w ago — Cross-platform screenshot tool
-04. **[EndlessVibe](https://github.com/MRsoymilk/EndlessVibe)** · Rust · updated 2w ago — Just do vibe coding!
+03. **[LiSnap](https://github.com/MRsoymilk/LiSnap)** · Rust · updated 3w ago — Cross-platform screenshot tool
+04. **[EndlessVibe](https://github.com/MRsoymilk/EndlessVibe)** · Rust · updated 3w ago — Just do vibe coding!
 05. **[mHyprBar](https://github.com/MRsoymilk/mHyprBar)** · Rust · updated 3w ago — A native Wayland status bar for Hyprland
 06. **[ReadAll](https://github.com/MRsoymilk/ReadAll)** · Rust · updated 3w ago — Cross-platform e-book reading
 07. **[mHyprMenu](https://github.com/MRsoymilk/mHyprMenu)** · Rust · ★ 1 · updated 1mo ago — A small native Wayland cascading context menu for Hyprland.
