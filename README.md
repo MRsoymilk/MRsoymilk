@@ -1,9 +1,9 @@
 ## Daily Commits
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-dark.svg?v=261112">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-light.svg?v=261112">
-  <img alt="Daily commits" src="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-light.svg?v=261112" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-dark.svg?v=261113">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-light.svg?v=261113">
+  <img alt="Daily commits" src="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-light.svg?v=261113" width="100%">
 </picture>
 
 ## Recently Active Projects
@@ -16,7 +16,7 @@
 05. **[mHyprBar](https://github.com/MRsoymilk/mHyprBar)** · Rust · updated 1mo ago — A native Wayland status bar for Hyprland
 06. **[ReadAll](https://github.com/MRsoymilk/ReadAll)** · Rust · updated 1mo ago — Cross-platform e-book reading
 07. **[mHyprMenu](https://github.com/MRsoymilk/mHyprMenu)** · Rust · ★ 1 · updated 1mo ago — A small native Wayland cascading context menu for Hyprland.
-08. **[cim](https://github.com/MRsoymilk/cim)** · C++ · updated 1mo ago — Command-im
+08. **[cim](https://github.com/MRsoymilk/cim)** · C++ · updated 2mo ago — Command-im
 09. **[YoAuthorize](https://github.com/MRsoymilk/YoAuthorize)** · C++ · updated 2mo ago — ya! net. simple network implement
 10. **[dotConfig](https://github.com/MRsoymilk/dotConfig)** · Lua · updated 2mo ago — Personal system configuration related
 <!-- RECENT_PROJECTS:END -->
