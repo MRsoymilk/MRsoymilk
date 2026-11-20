@@ -1,15 +1,15 @@
 ## Daily Commits
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-dark.svg?v=261119">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-light.svg?v=261119">
-  <img alt="Daily commits" src="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-light.svg?v=261119" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-dark.svg?v=261120">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-light.svg?v=261120">
+  <img alt="Daily commits" src="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-light.svg?v=261120" width="100%">
 </picture>
 
 ## Recently Active Projects
 
 <!-- RECENT_PROJECTS:START -->
-01. **[xiaomi_TM1801_light](https://github.com/MRsoymilk/xiaomi_TM1801_light)** · Rust · updated 2d ago — xiaomi TM1801 light control for Linux
+01. **[xiaomi_TM1801_light](https://github.com/MRsoymilk/xiaomi_TM1801_light)** · Rust · updated 3d ago — xiaomi TM1801 light control for Linux
 02. **[Vssjx](https://github.com/MRsoymilk/Vssjx)** · Assembly · ★ 4 · updated 3w ago — 冒泡社区蜀山剑侠！学习
 03. **[ctlyrics](https://github.com/MRsoymilk/ctlyrics)** · Rust · ★ 1 · updated 1mo ago — cmus terminal lyrics
 04. **[LiSnap](https://github.com/MRsoymilk/LiSnap)** · Rust · updated 1mo ago — Cross-platform screenshot tool
