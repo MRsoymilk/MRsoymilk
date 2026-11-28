@@ -1,16 +1,16 @@
 ## Daily Commits
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-dark.svg?v=261127">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-light.svg?v=261127">
-  <img alt="Daily commits" src="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-light.svg?v=261127" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-dark.svg?v=261128">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-light.svg?v=261128">
+  <img alt="Daily commits" src="https://raw.githubusercontent.com/MRsoymilk/MRsoymilk/main/assets/daily-contributions-light.svg?v=261128" width="100%">
 </picture>
 
 ## Recently Active Projects
 
 <!-- RECENT_PROJECTS:START -->
-01. **[mHyprBar](https://github.com/MRsoymilk/mHyprBar)** · Rust · updated 13h ago — A native Wayland status bar for Hyprland
-02. **[LiSnap](https://github.com/MRsoymilk/LiSnap)** · Rust · updated 3d ago — Cross-platform screenshot tool
+01. **[mHyprBar](https://github.com/MRsoymilk/mHyprBar)** · Rust · updated 1d ago — A native Wayland status bar for Hyprland
+02. **[LiSnap](https://github.com/MRsoymilk/LiSnap)** · Rust · updated 4d ago — Cross-platform screenshot tool
 03. **[xiaomi_TM1801_light](https://github.com/MRsoymilk/xiaomi_TM1801_light)** · Rust · updated 1w ago — xiaomi TM1801 light control for Linux
 04. **[Vssjx](https://github.com/MRsoymilk/Vssjx)** · Assembly · ★ 4 · updated 1mo ago — 冒泡社区蜀山剑侠！学习
 05. **[ctlyrics](https://github.com/MRsoymilk/ctlyrics)** · Rust · ★ 1 · updated 1mo ago — cmus terminal lyrics
